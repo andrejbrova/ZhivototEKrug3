@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ZhivototEKrug3</string>
+    <string name="register_here">Register Here</string>
+
+    <string-array name="types">
+        <item id="Adult">Adult</item>
+        <item id="Volunteer">Volunteer</item>
+        <item id="Organizer">Organizer</item>
+    </string-array>
+</resources>

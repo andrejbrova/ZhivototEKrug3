@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdultAdd"
+    android:background="@drawable/img">
+
+
+    <EditText
+        android:id="@+id/typeActivity"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descActivity"
+        android:layout_width="384dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeActivity" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="396dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descActivity" />
+
+    <EditText
+        android:id="@+id/repetitive"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Repetitive Activity(one-time, repetitive)"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+    <EditText
+        android:id="@+id/urgency"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Urgent Activity(yes, no)"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetitive" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="384dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Select date: "
+        android:inputType="none"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urgency" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Location: Skopje"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/addActivity"
+        android:layout_width="379dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#673AB7"
+        android:text="Add Activity"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
